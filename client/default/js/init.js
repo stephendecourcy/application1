@@ -21,7 +21,7 @@ var a=document.forms["Form"]["Input1"].value;
     {
       act:'sendStuff',
       "req": {
-         "name": a // send this value to the cloud
+         "name": "a" // send this value to the cloud
        }
     },
     function(res) {
