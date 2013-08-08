@@ -27,7 +27,7 @@ function bindControl() {
        }
     },
     function(res) {
-      document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res.madeUpKey) + "</p>";
+      document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res.madeUpKey) + "</BR>" +  JSON.stringify(res.otherKey) +"</p>";
     },
     function(code,errorprops,params) {
       alert('An error occured: ' + code + ' : ' + errorprops);
