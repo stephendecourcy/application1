@@ -14,6 +14,6 @@ exports.getConfig = function(params, callback) {
   console.log(params.peter);
   
   var config = require("config.js");
-  return callback(null, {madeUpKey: config.cloudObject1});
+  return callback(null, {madeUpKey: config.cloudObject1, otherKey: config.ABC});
 };
 
