@@ -20,7 +20,10 @@ function bindControl() {
   // See: http://docs.feedhenry.com/wiki/Actions
   $fh.act(
     {
-      act:'getConfig'
+      act:'getConfig',
+      "req": {
+         "key": "someValue" // send this value to the cloud
+       }
     },
     function(res) {
       document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res.madeUpKey) + "</p>";
