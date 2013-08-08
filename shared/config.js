@@ -28,5 +28,5 @@ var someOtherObject = {
   param1 : 'Initial value',
   param2 : false
 };
-exports.cloudObject1 = someObject;
+exports.cloudObject1 = someSmallObject;
 exports.ABC = someSmallObject;
