@@ -14,6 +14,28 @@ function startUp() {
   document.getElementById('run_button').onclick = bindControl;
 }
 
+function submitForm(){
+
+var a=document.forms["Form"]["Input1"].value;
+  $fh.act(
+    {
+      act:'sendStuff',
+      "req": {
+         "name": a // send this value to the cloud
+       }
+    },
+    function(res) {
+      document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res.madeUpKey) + "</BR>" +  JSON.stringify(res.otherKey) +"</p>";
+    },
+    function(code,errorprops,params) {
+      alert('An error occured: ' + code + ' : ' + errorprops);
+    }
+  );
+
+
+return false;
+}
+
 
 function bindControl() {
   // Invoke a cloud action call to get the remote configuration
