@@ -23,6 +23,7 @@ function bindControl() {
       act:'getConfig',
       "req": {
          "key": "someValue" // send this value to the cloud
+         "peter": "16" // send this value to the cloud
        }
     },
     function(res) {
