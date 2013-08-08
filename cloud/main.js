@@ -11,7 +11,6 @@ var util = require('util');
 exports.getConfig = function(params, callback) {
   console.log("In getConfig() call");
   console.log(req.key);
-//  console.log("Peter is" + req.peter + "years old");
   
   var config = require("config.js");
   return callback(null, {madeUpKey: config.cloudObject1});
