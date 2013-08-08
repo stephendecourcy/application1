@@ -17,3 +17,12 @@ exports.getConfig = function(params, callback) {
   return callback(null, {madeUpKey: config.cloudObject1, otherKey: config.ABC});
 };
 
+exports.sendStuff = function(params, callback) {
+  console.log("In sendStuff() call");
+  console.log(params.key);
+
+  
+  var config = require("config.js");
+  return callback(null, {madeUpKey: config.cloudObject1, otherKey: config.ABC});
+};
+
