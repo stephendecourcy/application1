@@ -16,8 +16,12 @@ to be bundled with the app when it is built, but also allowing the latest versio
 retrieved by the app from the cloud on start up.
 */
 
-var someObject = {
-  param1 : 'Initial value',
+var bossObject = {
+  param1 : 'Stephen',
+  param2 : false
+};
+var internObject = {
+  param1 : 'Peter',
   param2 : false
 };
 var someSmallObject = {
@@ -28,5 +32,5 @@ var someOtherObject = {
   param1 : 'Initial value',
   param2 : false
 };
-exports.cloudObject1 = someSmallObject;
-exports.ABC = someSmallObject;
+exports.cloudObject1 = bossObject;
+exports.ABC = internObject;
